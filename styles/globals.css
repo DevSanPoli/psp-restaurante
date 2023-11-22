@@ -87,11 +87,11 @@ nav ul li a:hover {
 }
 
 .plate div:last-child {
-  border-left: 1px solid #7f1d1d;
+  border-left: 1px solid var(--bg-secondary);
 }
 
 .plate:not(:last-child) {
-  border-bottom: 1px solid #7f1d1d;
+  border-bottom: 1px solid var(--bg-secondary);
 }
 
 .plate .image {

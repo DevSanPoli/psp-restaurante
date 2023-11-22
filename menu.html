@@ -1,86 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú - Restaurante La 33</title>
+    <title>Restaurante Peruano La 33</title>
+    <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="/styles/globals.css">
+    <link rel="stylesheet" href="/styles/menu.css">
 </head>
 <body>
-    <header>
-        <h1>Restaurante Peruano la 33</h1>
-        <p>Aquí encontrará los mejores platos Peruanos en Colombia.</p>
+    <header class="header">
+        <h1 class="title">Restaurante Peruano la 33</h1>
     </header>
     <nav>
         <ul>
             <li><a href="/index.html">Inicio</a></li>
             <li><a href="/menu.html">Menú</a></li>
-            <li><a href="/reservas.html">Reservas</a></li>
-            <li><a href="/reservas.html">Reservas</a></li>
+            <li><a href="/reservations.html">Reservas</a></li>
+            <li><a href="/contact-us.html">Contacto</a></li>
         </ul>
     </nav>
+    <main class="main">
+        <h2 class="sub-title">Menú</h2>
+        <section class="menu">
+            <h4 class="title-section">Entradas</h4>
+            <div class="menu-plate">
+                <div>
+                  <h3>Ceviche de Pescado</h3>
+                  <p>El ceviche de pescado es un plato típico peruano que consiste en pescado fresco marinado en jugo de limón, cilantro y ají, acompañado de cebolla y camote. Es una explosión de sabores frescos.</p>
+                </div>
+                <div>
+                </div>
+                <div>25.000 <span class="currency">COP</span></div>
+              </div>
+              <div class="menu-plate">
+                <div>
+                  <h3>Lomo Saltado</h3>
+                  <p>El Lomo Saltado es un plato peruano que combina trozos de filete de res, cebolla, tomate y papas fritas en una deliciosa salsa de soja y ají amarillo. Es una mezcla de sabores y texturas.</p>
+                </div>
+                <div>
+                  <!-- Puedes agregar una imagen aquí si lo deseas -->
+                </div>
+                <div>35.000 <span class="currency">COP</span></div>
+              </div>
+              <div class="menu-plate">
+                <div>
+                  <h3>Papa a la Huancaína</h3>
+                  <p>La Papa a la Huancaína es un plato peruano que consiste en papas cocidas cubiertas con una cremosa salsa de queso fresco, ají amarillo y galletas. Es un aperitivo popular en la gastronomía peruana.</p>
+                </div>
+                <div>
+                  <!-- Puedes agregar una imagen aquí si lo deseas -->
+                </div>
+                <div>18.000 <span class="currency">COP</span></div>
+              </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; Restaurante peruano la 33 - Todos los derechos reservados.</p>
+    </footer>
 </body>
-
-<main>
-    <h2>Platos</h2>
-    <section id="platos">
-        <div id="plato">
-            <h3>Ceviche Perunao</h3>
-            <img src="/public/assets/ceviche.jpeg" alt="Ceviche Peruano">
-        </div>
-        <div id="plato">
-            <h3>Lomo Salteado</h3>
-            <img src="/public/assets/lomo-salteado.jpg" alt="Lomo Salteado">
-        </div>
-        <div id="plato">
-            <h3>Causa Limeña</h3>
-            <img src="/public/assets/causa-limena.jpeg" alt="Causa Limeña">
-        </div>
-        <div id="plato">
-            <h3>Ají de Gallina</h3>
-            <img src="/public/assets/aji-gallina.jpeg" alt="Ahí de Gallina">
-        </div>
-    </section>
-    <h2>Bebidadas</h2>
-    <section id="bebidas">
-        <div id="bebida">
-            <h3>Chicha Morada</h3>
-            <img src="/public/assets/chicha-morada.jpeg" alt="Chicha Moarad">
-        </div>
-        <div id="bebida">
-            <h3>Inka Cola</h3>
-            <img src="/public/assets/inka-cola.jpeg" alt="Inka Cola">
-        </div>
-        <div id="bebida">
-            <h3>Chilcano</h3>
-            <img src="/public/assets/chilcano.jpeg" alt="Chilcano">
-        </div>
-        <div id="bebida">
-            <h3>Cusqueña</h3>
-            <img src="/public/assets/cusquena.jpeg" alt="Cusqueña">
-        </div>
-    </section>
-    <h2>Postres</h2>
-    <section id="postres">
-        <div id="postre">
-            <h3>Mazamorra</h3>
-            <img src="/public/assets/mazamorra-morada.webp" alt="Mazamoora Morada">
-        </div>
-        <div id="postre">
-            <h3>Arroz con leche</h3>
-            <img src="/public/assets/arroz-con-leche.webp" alt="Arroz con Leche">
-        </div>
-        <div id="postre">
-            <h3>Suspiro Limeño</h3>
-            <img src="/public/assets/suspiro-limeno.webp" alt="Suspiro Limeño">
-        </div>
-        <div id="postre">
-            <h3>Guargueros</h3>
-            <img src="/public/assets/guargueros.webp" alt="Guargueros">
-        </div>
-    </section>
-</main>
-<footer>
-    <p>&copy; Restaurante la 33. Todos los derechos reservados.</p>
-</footer>
 </html>

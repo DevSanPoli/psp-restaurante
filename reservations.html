@@ -1,30 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurante Peruano La 33</title>
-    <link rel="stylesheet" href="/styles/normalize.css">
-    <link rel="stylesheet" href="/styles/globals.css">
-    <link rel="stylesheet" href="/styles/menu.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/static/css/normalize.css" />
+    <link rel="stylesheet" href="/static/css/globals.css" />
+    <link rel="stylesheet" href="/static/css/reservations.css" />
+  </head>
+  <body>
     <header class="header">
-        <h1 class="title">Restaurante Peruano la 33</h1>
+      <h1 class="title">Restaurante Peruano la 33</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="/menu.html">Menú</a></li>
-            <li><a href="/reservations.html">Reservas</a></li>
-            <li><a href="/contact-us.html">Contactanos</a></li>
-        </ul>
+      <ul>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/menu.html">Menú</a></li>
+        <li><a href="/reservations.html">Reservas</a></li>
+        <li><a href="/about-us.html">Sobre nosotros</a></li>
+      </ul>
     </nav>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <div>
+          <h2>Confirmación de Reserva</h2>
+          <p>¡Hola, <span id="customer-name"></span>!</p>
+          <p>
+            Nos complace confirmar tu reserva. Aquí están los detalles de tu
+            visita:
+          </p>
+          <ul class="body-list">
+            <li>
+              <strong>Nombre:</strong> <span id="body-customer-name"></span>
+            </li>
+            <li><strong>Fecha:</strong> <span id="body-date"></span></li>
+            <li><strong>Hora:</strong> <span id="body-time"></span></li>
+            <li>
+              <strong>Número de Personas:</strong>
+              <span id="body-people"></span>
+            </li>
+            <li><strong>Contacto:</strong> <span id="body-number"></span></li>
+            <li>
+              <strong>Observaciones:</strong>
+              <span id="body-observations"></span>
+            </li>
+          </ul>
+          <p>
+            Tu mesa te estará esperando, y estamos emocionados de ofrecerte una
+            experiencia culinaria inolvidable con lo mejor de la cocina peruana.
+          </p>
+          <p>
+            Si necesitas realizar algún cambio o tienes alguna consulta
+            adicional, no dudes en contactarnos al
+            <a href="mailto:">reservas@restauranteperuanola33.com</a>.
+          </p>
+          <p>¡Te esperamos!</p>
+          <p>Saludos,<br />Restaurante Peruano la 33</p>
+        </div>
+      </div>
+    </div>
     <main class="main">
-        <h2 class="sub-title">Reservas</h2>
+      <h2 class="sub-title">Reservas</h2>
+      <form id="revervation" class="form">
+        <section class="form-section">
+          <h3>Reserva</h3>
+          <label for="date">
+            Fecha
+            <input class="form-input" id="date" type="date" required />
+          </label>
+          <label for="time">
+            Hora
+            <input class="form-input" id="time" type="time" required />
+          </label>
+          <label for="people">
+            Comensales
+            <input
+              class="form-input"
+              id="people"
+              type="number"
+              value="1"
+              required
+            />
+          </label>
+        </section>
+        <section class="form-section">
+          <h3>Datos de contacto</h3>
+          <label for="name">
+            Nombre
+            <input class="form-input" id="name" type="text" required />
+          </label>
+          <label for="email">
+            Correo electrónico
+            <input class="form-input" id="email" type="email" required />
+          </label>
+          <label for="number">
+            Teléfono
+            <input class="form-input" id="number" type="text" required />
+          </label>
+        </section>
+        <section class="form-section full-width-item">
+          <label for="observations">
+            Observaciones
+            <textarea
+              class="form-textarea"
+              id="observations"
+              rows="5"
+            ></textarea>
+          </label>
+        </section>
+        <section class="full-width-item section-btn">
+          <button type="submit" class="btn">Reservar</button>
+        </section>
+      </form>
     </main>
     <footer class="footer">
-        <p>&copy; Restaurante peruano la 33 - Todos los derechos reservados.</p>
+      <p>&copy; Restaurante peruano la 33 - Todos los derechos reservados.</p>
     </footer>
-</body>
+    <script src="/static/js/main.js"></script>
+  </body>
 </html>

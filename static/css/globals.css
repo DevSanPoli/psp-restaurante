@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Trocchi&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Ephesis&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Trocchi&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ephesis&display=swap");
 
 :root {
   --max-width: 768px;
@@ -12,7 +12,7 @@
 
 html {
   font-size: 16px;
-  font-family: 'Trocchi', sans-serif;
+  font-family: "Trocchi", sans-serif;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 }
 
 .title {
-  font-family: 'Ephesis', sans-serif;
+  font-family: "Ephesis", sans-serif;
   font-size: var(--text-xl);
   user-select: none;
 }
@@ -107,7 +107,7 @@ nav ul li a:hover {
 
 .plate .image img:hover {
   transform: scale(1.2);
-  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25)
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 }
 
 .plate .description {
@@ -129,3 +129,14 @@ nav ul li a:hover {
   line-height: 2rem;
 }
 
+.btn {
+  background-color: var(--bg-secondary);
+  color: var(--bg-primary);
+  border-color: transparent;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border-color: var(--bg-primary);
+}

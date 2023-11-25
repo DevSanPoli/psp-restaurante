@@ -1,0 +1,33 @@
+.title-section {
+  font-size: 1.7rem;
+}
+
+.menu {
+  background: #fff;
+  padding: 1.2rem;
+  border: 1px solid var(--bg-secondary);
+}
+
+.menu-plate {
+  display: flex;
+  margin-bottom: 32px;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-plate:last-child {
+  border-bottom: none;
+}
+
+.menu-plate div {
+  flex: 1 1 0%;
+}
+
+.menu-plate div:last-child {
+  flex: none;
+  font-size: var(--text-lg);
+}
+
+.currency {
+  font-size: var(--text-sm);
+}
